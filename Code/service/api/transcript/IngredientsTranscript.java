@@ -1,7 +1,7 @@
-package api.transcript;
+package service.api.transcript;
 import com.google.gson.annotations.SerializedName;
 
-import api.bread.IngredientAPI;
+import service.api.bread.IngredientAPI;
 
 import java.util.*;
 

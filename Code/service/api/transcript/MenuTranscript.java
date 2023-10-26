@@ -1,9 +1,9 @@
-package api.transcript;
+package service.api.transcript;
 
 
 import com.google.gson.annotations.SerializedName;
 
-import api.bread.BreadAPI;
+import service.api.bread.BreadAPI;
 
 import java.util.*;
 
@@ -22,10 +22,8 @@ public class MenuTranscript {
     }
 
     public HashMap<String, BreadAPI> getBreadMap() {
-        // สร้าง HashMap เพื่อเก็บข้อมูลแบบ <id, Bread>
         HashMap<String, BreadAPI> breadMap = new HashMap<>();
-
-        // นำข้อมูลจาก breadList และเก็บลงใน HashMap
+        
         for (BreadAPI bread : breadAPIList) {
             breadMap.put(bread.getTitle(), bread);
         }

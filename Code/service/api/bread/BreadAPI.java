@@ -1,4 +1,4 @@
-package api.bread;
+package service.api.bread;
 public class BreadAPI {
     private String id;
     private String title;

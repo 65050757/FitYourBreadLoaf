@@ -1,11 +1,11 @@
-package api;
+package service.api;
 
 import java.util.*;
 
-import api.bread.*;
-import api.transcript.*;
-
 import com.google.gson.Gson;
+
+import service.api.bread.*;
+import service.api.transcript.*;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -15,7 +15,7 @@ import java.net.http.HttpResponse.BodyHandlers;
 
 //this class call spooacularAPI
 public class ApiCaller {
-    final static String APIKEY = "08d4c22276484528954fcbd64447ccd6";
+    final static String APIKEY = "8c674318db3d4278b2dbc6265685e365";
     
     HttpRequest getRequest;
     HttpClient httpClient;
@@ -33,7 +33,7 @@ public class ApiCaller {
 
     private void importMenuName() throws Exception{
         MenuTranscript transcript;
-        String apiURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=08d4c22276484528954fcbd64447ccd6&query=bread&equipment=loafpan";
+        String apiURL = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + APIKEY + "&query=bread&equipment=loafpan";
         
 
         getRequest = (HttpRequest) HttpRequest.newBuilder()
@@ -51,7 +51,7 @@ public class ApiCaller {
         //System.out.print(menuList);
     }
     public List<IngredientAPI> importIngredientsbyId(String id) throws Exception{
-        String apiURL = "https://api.spoonacular.com/recipes/" + id + "/information?apiKey=08d4c22276484528954fcbd64447ccd6";
+        String apiURL = "https://api.spoonacular.com/recipes/" + id + "/information?apiKey=" + APIKEY;
         IngredientsTranscript transcript = new IngredientsTranscript();
         List<IngredientAPI> ingredientsList;
 
@@ -68,7 +68,7 @@ public class ApiCaller {
         return ingredientsList;
     }
     public String importProcess(String id) throws Exception{
-        String apiURL = "https://api.spoonacular.com/recipes/" + id + "/information?apiKey=08d4c22276484528954fcbd64447ccd6";
+        String apiURL = "https://api.spoonacular.com/recipes/" + id + "/information?apiKey=" + APIKEY;
         ProcessTranscript transcript = new ProcessTranscript();
 
         getRequest = (HttpRequest) HttpRequest.newBuilder()

@@ -1,3 +1,4 @@
+package service;
 public class Ingredient{
     private String name;
     private double quantityIngram; //gram in unit

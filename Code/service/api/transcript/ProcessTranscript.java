@@ -1,4 +1,4 @@
-package api.transcript;
+package service.api.transcript;
 
 public class ProcessTranscript {
     String instructions;

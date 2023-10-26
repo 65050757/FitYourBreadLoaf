@@ -1,4 +1,4 @@
-package api.bread;
+package service.api.bread;
 
 import com.google.gson.annotations.SerializedName;
 

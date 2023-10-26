@@ -1,7 +1,9 @@
+package service;
 
 import java.util.*;
-import api.*;
-import api.bread.*;
+
+import service.api.*;
+import service.api.bread.*;
 
 public class APIbreadLoaf{
     private final static double PANSIZE = 1600; //Unit:milliliter 
@@ -11,14 +13,14 @@ public class APIbreadLoaf{
     private BreadLoaf bread;
     private String inputMenu;
 
-    APIbreadLoaf() throws Exception{
+    public APIbreadLoaf() throws Exception{
         importTool = new ApiCaller();
     }
  
     public void makeABreadLoaf(String name) throws Exception{
         bread = new BreadLoaf();
         // putBreadLOAFName(name);
-        // //putIngredients(name);
+        // putIngredients(name);
         // putProcess(name);
 
         Thread breadThread = new Thread(() -> {
