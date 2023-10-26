@@ -430,7 +430,7 @@ public class test extends JFrame {
         JLabel text = new JLabel("Result");
         text.setBounds(525, 225, 150, 30);
 
-        JLabel label = new JLabel("<html><p>menuName='Autumn Beer Bread</p><p>ingredients=[flour 194.0 gram, pumpkin beer 264.5724050058116 gram, brown sugar 2.3314463733618345 gram, brown sugar 2.329778562011694 gram, baking powder 0.7769669487637185 gram, golden raisins 56.29436727818974 gram, pecans 21.15270380403591 gram, salt 0.38784475886236036 gram]</p><p>panSize=1800.0</p></p><p>process='Depented ou you... Luckily!!</p>/html>");
+        JLabel label = new JLabel("<html><p>menuName='Autumn Beer Bread</p><p>ingredients=[flour 194.0 gram, pumpkin beer 264.5724050058116 gram, brown sugar 2.3314463733618345 gram, brown sugar 2.329778562011694 gram, baking powder 0.7769669487637185 gram, golden raisins 56.29436727818974 gram, pecans 21.15270380403591 gram, salt 0.38784475886236036 gram]</p><p>panSize=1800cd.0</p></p><p>process='Depented ou you... Luckily!!</p>/html>");
         // String txt= "menuName='Autumn Beer Bread', ingredients=[flour 194.0 gram, pumpkin beer 264.5724050058116 gram, brown sugar 2.3314463733618345 gram, brown sugar 2.329778562011694 gram, baking powder 0.7769669487637185 gram, golden raisins 56.29436727818974 gram/n, pecans 21.15270380403591 gram, salt 0.38784475886236036 gram], panSize=1245.0, process='Depented ou you... Luckily!!'";
         
 
