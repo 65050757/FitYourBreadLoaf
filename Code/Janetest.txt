@@ -1,8 +1,0 @@
-public class test {
-    public static void main(String[] args) throws Exception {
-        APIbreadLoaf breadapi = new APIbreadLoaf();
-        breadapi.setInputMenu("Corn Bread");
-        breadapi.makeABreadLoaf(breadapi.getInputMenu());
-        System.out.println(breadapi.getBread());
-    }
-}

@@ -1,12 +1,14 @@
+import java.util.*;
+
 public class BreadLoaf {
     private String menuName;
-    private List<Ingredient> ingredients;
+    private ArrayList<Ingredient> ingredients;
     private double panSize;
     private String process;
 
     public BreadLoaf() {}
 
-    public BreadLoaf(String menuName, List<Ingredient> ingredients, double panSize, String process) {
+    public BreadLoaf(String menuName, ArrayList<Ingredient> ingredients, double panSize, String process) {
         this.menuName = menuName;
         this.ingredients = ingredients;
         this.panSize = panSize;
@@ -33,7 +35,7 @@ public class BreadLoaf {
         this.menuName = menuName;
     }
 
-    public void setIngredients(List<Ingredient> ingredients) {
+    public void setIngredients(ArrayList<Ingredient> ingredients) {
         this.ingredients = ingredients;
     }
 
